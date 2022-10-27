@@ -1,0 +1,26 @@
+.footer-link {
+  transition: color var(--timing-function);
+
+  color: var(--white-transparent);
+  font-size: 14px;
+  font-style: normal;
+}
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--accent);
+}
+.footer-adress {
+  transition: color var(--timing-function);
+
+  color: var(--white-color);
+  font-size: 14px;
+  text-decoration: none;
+  font-style: normal;
+}
+.footer-adress:hover,
+.footer-adress:focus {
+  color: var(--accent);
+}
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
+}

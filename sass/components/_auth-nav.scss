@@ -1,0 +1,37 @@
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+}
+.auth-nav .item + .item {
+  margin-left: 50px;
+}
+.auth-nav-link {
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: var(--text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  transition: color var(--timing-function);
+}
+.mail-icon {
+  fill: currentColor;
+  margin-right: 10px;
+}
+.smartphone-icon {
+  fill: currentColor;
+  margin-right: 10px;
+}
+.auth-nav-link:hover,
+.auth-nav-link:focus {
+  color: var(--accent);
+}
+
+.smartphone-item:hover .smartphone-icon,
+.smartphone-item:focus .smartphone-icon {
+  fill: var(--accent);
+}
