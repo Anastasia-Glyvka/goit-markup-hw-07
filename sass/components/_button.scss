@@ -7,8 +7,8 @@
   min-width: 216px;
   margin: 0 auto;
 
-  color: var(--white-color);
-  background-color: var(--accent);
+  color: $whiteColor;
+  background-color: $accent;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -16,7 +16,7 @@
   letter-spacing: 0.06em;
   cursor: pointer;
 
-  transition: background-color var(--timing-function);
+  transition: background-color $timingFunction;
 }
 .button:hover,
 .button:focus {

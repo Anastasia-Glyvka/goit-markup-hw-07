@@ -24,19 +24,19 @@
   border-radius: 4px;
   cursor: pointer;
 
-  transition: border-color var(--timing-function);
+  transition: border-color $timingFunction;
 }
 
 .clients-logo {
   fill: #afb1b8;
-  transition: fill var(--timing-function);
+  transition: fill $timingFunction;
 }
 
 .clients-link:hover,
 .clients-link:focus {
-  border-color: var(--accent);
+  border-color: $accent;
 }
 .clients-link:hover .clients-logo,
 .clients-link:focus .clients-logo {
-  fill: var(--accent);
+  fill: $accent;
 }

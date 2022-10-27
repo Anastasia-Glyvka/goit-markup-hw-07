@@ -1,5 +1,5 @@
 .team {
-  background-color: var(--background-secondary);
+  background-color: $backgroundSecondary;
   text-align: center;
 }
 .team .list {
@@ -12,7 +12,7 @@
   line-height: 1.17;
 }
 .team .workers {
-  background-color: var(--white-color);
+  background-color: $whiteColor;
 }
 .team .workers:not(:last-child) {
   margin-right: 30px;

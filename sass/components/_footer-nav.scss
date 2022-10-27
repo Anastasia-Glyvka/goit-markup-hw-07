@@ -1,25 +1,25 @@
 .footer-link {
-  transition: color var(--timing-function);
+  transition: color $timingFunction;
 
-  color: var(--white-transparent);
+  color: $whiteTransparent;
   font-size: 14px;
   font-style: normal;
 }
 .footer-link:hover,
 .footer-link:focus {
-  color: var(--accent);
+  color: $accent;
 }
 .footer-adress {
-  transition: color var(--timing-function);
+  transition: color $timingFunction;
 
-  color: var(--white-color);
+  color: $whiteColor;
   font-size: 14px;
   text-decoration: none;
   font-style: normal;
 }
 .footer-adress:hover,
 .footer-adress:focus {
-  color: var(--accent);
+  color: $accent;
 }
 .footer-item:not(:last-child) {
   margin-bottom: 9px;

@@ -5,7 +5,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scaleY(1);
-  transition: transform var(--timing-function);
+  transition: transform $timingFunction;
 
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -26,14 +26,14 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
 
   cursor: pointer;
-  transition: color var(--timing-function);
+  transition: color $timingFunction;
 }
 .icon-close {
   fill: currentColor;
 }
 .button-close:hover,
 .button-close:focus {
-  color: var(--accent);
+  color: $accent;
 }
 
 .modal-text {
@@ -72,11 +72,11 @@
   padding-left: 42px;
   outline: none;
 
-  transition: border-color var(--timing-function);
+  transition: border-color $timingFunction;
 }
 .input:hover,
 .input:focus {
-  border-color: var(--accent);
+  border-color: $accent;
 }
 
 .modal-form-icon {
@@ -87,11 +87,11 @@
 
   fill: currentColor;
 
-  transition: fill var(--timing-function);
+  transition: fill $timingFunction;
 }
 .input:hover + .modal-form-icon,
 .input:focus + .modal-form-icon {
-  fill: var(--accent);
+  fill: $accent;
 }
 .modal-form-comment {
   display: flex;
@@ -107,13 +107,13 @@
   outline: none;
   padding: 12px 16px;
 
-  transition: border-color var(--timing-function);
+  transition: border-color $timingFunction;
 
   resize: none;
 }
 .comment:hover,
 .comment:focus {
-  border-color: var(--accent);
+  border-color: $accent;
 }
 .comment::placeholder {
   font-size: 12px;
@@ -147,16 +147,16 @@
   fill: transparent;
 }
 .checkbox-input:checked + .check-text .check-wrap {
-  background-color: var(--accent);
+  background-color: $accent;
   border-color: transparent;
-  fill: var(--white-color);
+  fill: $whiteColor;
 }
 .checkbox-input:focus + .check-text .check-wrap {
-  border-color: var(--accent);
+  border-color: $accent;
 }
 .modal-link {
   margin-left: 2px;
-  color: var(--accent);
+  color: $accent;
   text-underline-offset: 4px;
 }
 .modal-form-btn {
@@ -168,8 +168,8 @@
   min-width: 210px;
   margin: 0 auto;
 
-  color: var(--white-color);
-  background-color: var(--accent);
+  color: $whiteColor;
+  background-color: $accent;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -177,7 +177,7 @@
   letter-spacing: 0.06em;
   cursor: pointer;
 
-  transition: background-color var(--timing-function);
+  transition: background-color $timingFunction;
 }
 .modal-form-btn:hover,
 .modal-form-btn:focus {

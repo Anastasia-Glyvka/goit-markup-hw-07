@@ -10,13 +10,13 @@
   align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
-  color: var(--text-color);
+  color: $textColor;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 
-  transition: color var(--timing-function);
+  transition: color $timingFunction;
 }
 .mail-icon {
   fill: currentColor;
@@ -28,10 +28,10 @@
 }
 .auth-nav-link:hover,
 .auth-nav-link:focus {
-  color: var(--accent);
+  color: $accent;
 }
 
 .smartphone-item:hover .smartphone-icon,
 .smartphone-item:focus .smartphone-icon {
-  fill: var(--accent);
+  fill: $accent;
 }

@@ -25,7 +25,7 @@
 
   text-transform: uppercase;
 
-  color: var(--white-color);
+  color: $whiteColor;
 }
 .examples .item:not(:last-child) {
   margin-right: 30px;

@@ -4,7 +4,7 @@
   line-height: 1.19;
 }
 .team .text {
-  color: var(--text-color);
+  color: $textColor;
   font-size: 16px;
   line-height: 1.19;
 }
@@ -29,8 +29,7 @@
 
   color: #afb1b8;
 
-  transition: background-color var(--timing-function),
-    color var(--timing-function);
+  transition: background-color $timingFunction, color $timingFunction;
 }
 
 .social-link-icon {
@@ -39,6 +38,6 @@
 
 .social-link:hover,
 .social-link:focus {
-  background-color: var(--accent);
-  color: var(--white-color);
+  background-color: $accent;
+  color: $whiteColor;
 }

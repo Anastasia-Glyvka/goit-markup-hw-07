@@ -1,12 +1,12 @@
 .portfolio-card .title {
-  color: var(--primary-color);
+  color: $primaryColor;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 .portfolio-card .text {
-  color: var(--text-color);
+  color: $textColor;
   line-height: 1.88;
 }
 .portfolio-list {
@@ -24,7 +24,7 @@
 }
 .portfolio-link {
   display: block;
-  transition: box-shadow var(--timing-function);
+  transition: box-shadow $timingFunction;
 }
 .portfolio-link:hover,
 .portfolio-link:focus {
@@ -53,9 +53,9 @@
   line-height: 1.56;
   letter-spacing: 0.03em;
 
-  color: var(--white-color);
+  color: $whiteColor;
   background-color: rgba(33, 150, 243, 0.9);
 
   transform: translateY(100%);
-  transition: transform var(--timing-function);
+  transition: transform $timingFunction;
 }
