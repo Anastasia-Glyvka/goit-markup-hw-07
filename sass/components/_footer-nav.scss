@@ -4,11 +4,13 @@
   color: $whiteTransparent;
   font-size: 14px;
   font-style: normal;
+
+  &:hover,
+  &:focus {
+    color: $accent;
+  }
 }
-.footer-link:hover,
-.footer-link:focus {
-  color: $accent;
-}
+
 .footer-adress {
   transition: color $timingFunction;
 
@@ -16,11 +18,13 @@
   font-size: 14px;
   text-decoration: none;
   font-style: normal;
+
+  &:hover,
+  ˆ:focus {
+    color: $accent;
+  }
 }
-.footer-adress:hover,
-.footer-adress:focus {
-  color: $accent;
-}
+
 .footer-item:not(:last-child) {
   margin-bottom: 9px;
 }

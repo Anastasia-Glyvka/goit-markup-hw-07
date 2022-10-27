@@ -28,14 +28,15 @@
   outline: none;
 
   transition: border-color $timingFunction;
-}
-.footer-subscribe-input:hover,
-.footer-subscribe-input:focus {
-  border-color: $accent;
-}
-.footer-subscribe-input::placeholder {
-  line-height: 1.25;
-  color: rgba(255, 255, 255, 0.6);
+
+  &:hover,
+  &:focus {
+    border-color: $accent;
+  }
+  &::placeholder {
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+  }
 }
 
 .footer-subscribe-button {
@@ -59,11 +60,13 @@
   cursor: pointer;
 
   transition: background-color $timingFunction;
+
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
 }
-.footer-subscribe-button:hover,
-.footer-subscribe-button:focus {
-  background-color: #188ce8;
-}
+
 .footer-subscribe-icon {
   margin-left: 10px;
 }

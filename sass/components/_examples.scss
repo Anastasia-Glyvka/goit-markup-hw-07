@@ -1,13 +1,13 @@
 .examples.section {
   padding-top: 0;
 }
-.examples .list {
+.examples-list {
   display: flex;
 }
 .examples-thumb {
   position: relative;
 }
-.examples-title {
+.examples-text {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -19,21 +19,16 @@
   justify-content: center;
   align-items: center;
 
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-
+  @include font(700, 14px, 1.14, null);
   text-transform: uppercase;
 
   color: $whiteColor;
 }
-.examples .item:not(:last-child) {
+.examples-item:not(:last-child) {
   margin-right: 30px;
 }
-.examples .title {
+.examples-title {
   margin-bottom: 50px;
   text-align: center;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  @include font(700, 36px, 1.17, null);
 }

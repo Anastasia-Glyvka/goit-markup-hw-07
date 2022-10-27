@@ -3,16 +3,12 @@
   width: 206px;
 }
 .action-title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
+  @include font(700, 14px, 1.14, null);
   text-transform: uppercase;
   color: $whiteColor;
   max-width: 116px;
 
   margin-bottom: 20px;
-  /* 
-  padding-top: 12px; */
 }
 .action-list {
   display: flex;
@@ -37,11 +33,12 @@
   transition: background-color $timingFunction;
 
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $accent;
+  }
 }
 .action-icon {
   fill: $whiteColor;
-}
-.action-link:hover,
-.action-link:focus {
-  background-color: $accent;
 }

@@ -11,12 +11,18 @@
   padding-top: 32px;
   padding-bottom: 32px;
   color: $textColor;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  @include font(500, 14px, 1.14, 0.02em);
+  // font-weight: 500;
+  // font-size: 14px;
+  // line-height: 1.14;
+  // letter-spacing: 0.02em;
 
   transition: color $timingFunction;
+
+  &:hover,
+  &:focus {
+    color: $accent;
+  }
 }
 .mail-icon {
   fill: currentColor;
@@ -25,13 +31,9 @@
 .smartphone-icon {
   fill: currentColor;
   margin-right: 10px;
-}
-.auth-nav-link:hover,
-.auth-nav-link:focus {
-  color: $accent;
-}
 
-.smartphone-item:hover .smartphone-icon,
-.smartphone-item:focus .smartphone-icon {
-  fill: $accent;
+  .smartphone-item:hover &,
+  .smartphone-item:focus & {
+    fill: $accent;
+  }
 }

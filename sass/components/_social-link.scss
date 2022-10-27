@@ -1,12 +1,9 @@
 .team .title {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
+  @include font(500, 16px, 1.19, null);
 }
 .team .text {
   color: $textColor;
-  font-size: 16px;
-  line-height: 1.19;
+  @include font(null, 16px, 1.19, null);
 }
 .social-link-list {
   display: flex;
@@ -30,14 +27,14 @@
   color: #afb1b8;
 
   transition: background-color $timingFunction, color $timingFunction;
+
+  &:hover,
+  &:focus {
+    background-color: $accent;
+    color: $whiteColor;
+  }
 }
 
 .social-link-icon {
   fill: currentColor;
-}
-
-.social-link:hover,
-.social-link:focus {
-  background-color: $accent;
-  color: $whiteColor;
 }

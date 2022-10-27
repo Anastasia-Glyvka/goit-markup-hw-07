@@ -27,19 +27,18 @@
 
   cursor: pointer;
   transition: color $timingFunction;
+
+  &:hover,
+  &:focus {
+    color: $accent;
+  }
 }
 .icon-close {
   fill: currentColor;
 }
-.button-close:hover,
-.button-close:focus {
-  color: $accent;
-}
 
 .modal-text {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
+  @include font(700, 20px, 1.15, null);
   text-align: center;
 
   color: #212121;
@@ -55,9 +54,7 @@
 }
 
 .label {
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
+  @include font(null, 12px, 1.16, 0.01em);
   color: #757575;
   margin-bottom: 4px;
 }
@@ -73,10 +70,11 @@
   outline: none;
 
   transition: border-color $timingFunction;
-}
-.input:hover,
-.input:focus {
-  border-color: $accent;
+
+  &:hover,
+  &:focus {
+    border-color: $accent;
+  }
 }
 
 .modal-form-icon {
@@ -88,11 +86,13 @@
   fill: currentColor;
 
   transition: fill $timingFunction;
+
+  .input:hover + &,
+  .input:focus + & {
+    fill: $accent;
+  }
 }
-.input:hover + .modal-form-icon,
-.input:focus + .modal-form-icon {
-  fill: $accent;
-}
+
 .modal-form-comment {
   display: flex;
   flex-direction: column;
@@ -110,17 +110,17 @@
   transition: border-color $timingFunction;
 
   resize: none;
+
+  &:hover,
+  &:focus {
+    border-color: $accent;
+  }
+  &::placeholder {
+    @include font(null, 12px, 1.17, 0.01em);
+    color: rgba(117, 117, 117, 0.5);
+  }
 }
-.comment:hover,
-.comment:focus {
-  border-color: $accent;
-}
-.comment::placeholder {
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
-}
+
 .modal-form-checkbox {
   margin-bottom: 30px;
   display: flex;
@@ -145,15 +145,17 @@
   align-items: center;
   justify-content: center;
   fill: transparent;
+
+  .checkbox-input:checked + .check-text & {
+    background-color: $accent;
+    border-color: transparent;
+    fill: $whiteColor;
+  }
+  .checkbox-input:focus + .check-text & {
+    border-color: $accent;
+  }
 }
-.checkbox-input:checked + .check-text .check-wrap {
-  background-color: $accent;
-  border-color: transparent;
-  fill: $whiteColor;
-}
-.checkbox-input:focus + .check-text .check-wrap {
-  border-color: $accent;
-}
+
 .modal-link {
   margin-left: 2px;
   color: $accent;
@@ -171,15 +173,13 @@
   color: $whiteColor;
   background-color: $accent;
   font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
+  @include font(700, 16px, 1.88, 0.06em);
   cursor: pointer;
 
   transition: background-color $timingFunction;
-}
-.modal-form-btn:hover,
-.modal-form-btn:focus {
-  background-color: #188ce8;
+
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
 }
