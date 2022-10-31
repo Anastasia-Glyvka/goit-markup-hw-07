@@ -1,14 +1,24 @@
 .workers {
+  display: flex;
+}
+.workers__item {
+  background-color: $whiteColor;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
-.workers-photo {
+.workers__photo {
   margin-bottom: 30px;
 }
-.workers-title {
+.workers__title {
+  @include font(500, 16px, 1.19, null);
   margin-bottom: 10px;
 }
-.workers-text {
+.workers__text {
   margin-bottom: 16px;
+  color: $textColor;
+  @include font(null, 16px, 1.19, null);
 }

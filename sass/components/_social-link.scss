@@ -1,21 +1,14 @@
-.team .title {
-  @include font(500, 16px, 1.19, null);
-}
-.team .text {
-  color: $textColor;
-  @include font(null, 16px, 1.19, null);
-}
-.social-link-list {
+.social {
   display: flex;
   gap: 10px;
   justify-content: center;
   padding-bottom: 30px;
 }
-.social-link-item {
+.social__item {
   width: 44px;
   height: 44px;
 }
-.social-link {
+.social__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,6 +28,6 @@
   }
 }
 
-.social-link-icon {
+.social__icon {
   fill: currentColor;
 }
