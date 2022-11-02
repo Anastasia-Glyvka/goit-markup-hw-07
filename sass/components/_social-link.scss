@@ -2,7 +2,10 @@
   display: flex;
   gap: 10px;
   justify-content: center;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
+  @include desktop {
+    padding-bottom: 30px;
+  }
 }
 .social__item {
   width: 44px;
