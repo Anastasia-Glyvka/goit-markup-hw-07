@@ -1,3 +1,8 @@
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
 .footer-link {
   transition: color $timingFunction;
 
@@ -24,7 +29,3 @@
     color: $accent;
   }
 }
-
-// .footer-item:not(:last-child) {
-//   margin-bottom: 9px;
-// }
