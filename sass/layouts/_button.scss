@@ -11,10 +11,6 @@
   background-color: $accent;
   font-family: inherit;
   @include font(700, 16px, 1.88, 0.06em);
-  // font-weight: 700;
-  // font-size: 16px;
-  // line-height: 1.88;
-  // letter-spacing: 0.06em;
   cursor: pointer;
 
   transition: background-color $timingFunction;

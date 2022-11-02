@@ -3,6 +3,7 @@
 }
 .examples-list {
   display: flex;
+  gap: 30px;
 }
 .examples-thumb {
   position: relative;
@@ -24,9 +25,7 @@
 
   color: $whiteColor;
 }
-.examples-item:not(:last-child) {
-  margin-right: 30px;
-}
+
 .examples-title {
   margin-bottom: 50px;
   text-align: center;

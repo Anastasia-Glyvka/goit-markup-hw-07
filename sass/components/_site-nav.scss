@@ -4,10 +4,7 @@
 }
 .site-nav {
   display: flex;
-
-  & .item:not(:last-child) {
-    margin-right: 50px;
-  }
+  gap: 50px;
 }
 
 .site-nav-link {
