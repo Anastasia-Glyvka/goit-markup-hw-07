@@ -1,16 +1,29 @@
 .clients__title {
-  margin-bottom: 50px;
   text-align: center;
-  @include font(700, 36px, 1.17, null);
+  @include font(700, 28px, 1.18, null);
+  margin-bottom: 30px;
+  @include desktop {
+    margin-bottom: 50px;
+    @include font(700, 36px, 1.17, null);
+  }
 }
 .clients__list {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
 .clients__item {
-  width: 170px;
   height: 92px;
+  width: calc((100% - 30px) / 2);
+
+  @include tablet {
+    width: calc((100% - 60px) / 3);
+  }
+  @include desktop {
+    width: calc((100% - 150px) / 6);
+  }
 }
 .clients__link {
   display: flex;
