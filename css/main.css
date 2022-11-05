@@ -177,17 +177,38 @@ body {
   max-width: 1600px;
   margin: 0 auto;
   background-color: #c4c4c4;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bcg-img.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/bcg-img-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   padding-top: 118px;
   padding-bottom: 118px;
 }
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/bcg-img-mob-2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/bcg-img-tab.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/bcg-img-tab-2x.jpg);
+  }
+}
 @media screen and (min-width: 1200px) {
   .hero {
     padding-top: 200px;
     padding-bottom: 200px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/bcg-img.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/bcg-img-2x.jpg);
   }
 }
 
@@ -280,10 +301,8 @@ body {
   color: #757575;
   font-size: 14px;
 }
-@media screen and (max-width: 767px) {
-  .features__text:not(:last-child) {
-    margin-bottom: 30px;
-  }
+.features__text:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .features__background {
@@ -514,15 +533,26 @@ body {
   fill: currentColor;
 }
 
-.footer-wrapper {
-  display: flex;
-  align-items: baseline;
+@media screen and (min-width: 1200px) {
+  .footer-wrapper {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .footer {
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .tablet-footer-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 60px;
+  }
 }
 
 .logo-footer {
@@ -534,6 +564,13 @@ body {
 }
 .logo-footer span {
   color: #ffffff;
+}
+
+@media screen and (max-width: 767px) {
+  .footer-container {
+    text-align: center;
+    margin-bottom: 60px;
+  }
 }
 
 .footer-list {
@@ -565,8 +602,16 @@ body {
 }
 
 .footer-action {
-  margin-left: 70px;
-  width: 206px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-action {
+    margin-left: 70px;
+    width: 206px;
+  }
 }
 
 .action-title {
@@ -610,13 +655,26 @@ body {
 }
 
 .footer-subscribe {
-  margin-left: 93px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-subscribe {
+    margin-left: 93px;
+  }
 }
 
 .footer-subscribe-field {
-  position: relative;
   display: flex;
+  flex-direction: column;
   align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer-subscribe-field {
+    position: relative;
+    flex-direction: row;
+    align-items: baseline;
+  }
 }
 
 .footer-subscribe-text {
@@ -629,7 +687,8 @@ body {
 }
 
 .footer-subscribe-input {
-  width: 350px;
+  width: 100%;
+  margin-bottom: 20px;
   height: 50px;
   padding: 0;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -656,6 +715,16 @@ body {
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
 }
+@media screen and (min-width: 768px) {
+  .footer-subscribe-input {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-subscribe-input {
+    width: 350px;
+  }
+}
 
 .footer-subscribe-button {
   display: flex;
@@ -666,7 +735,7 @@ body {
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   padding: 10px 28px;
-  min-width: 200px;
+  width: 200px;
   color: #ffffff;
   background-color: #2196f3;
   font-family: inherit;
