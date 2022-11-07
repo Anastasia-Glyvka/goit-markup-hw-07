@@ -1,8 +1,10 @@
 .features__list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
   @include tablet {
-    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    gap: 30px;
   }
 }
 .features__item {
@@ -22,9 +24,6 @@
 .features__text {
   color: $textColor;
   font-size: 14px;
-  &:not(:last-child) {
-    margin-bottom: 30px;
-  }
 }
 
 .features__background {
