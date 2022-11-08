@@ -946,9 +946,21 @@ body {
 
 .button-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
-  margin-bottom: 50px;
-  justify-content: center;
+  margin-bottom: 40px;
+  margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .button-list {
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .button-list {
+    margin-bottom: 50px;
+  }
 }
 
 .filter-button {
@@ -985,12 +997,25 @@ body {
 
 .portfolio-list {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 30px;
 }
+@media screen and (min-width: 768px) {
+  .portfolio-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
 
-.portfolio-card {
-  flex-basis: calc(33.3333333333% - 30px);
+@media screen and (min-width: 768px) {
+  .portfolio-card {
+    flex-basis: calc(50% - 30px);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-card {
+    flex-basis: calc(33.3333333333% - 30px);
+  }
 }
 
 .portfolio-border {
@@ -1040,7 +1065,7 @@ body {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop.is-hidden {
+.is-hidden {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;

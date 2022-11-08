@@ -3,9 +3,18 @@
 }
 .button-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
-  margin-bottom: 50px;
-  justify-content: center;
+  margin-bottom: 40px;
+  margin-right: auto;
+
+  @include tablet {
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+  @include desktop {
+    margin-bottom: 50px;
+  }
 }
 
 .filter-button {
